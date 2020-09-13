@@ -1,0 +1,310 @@
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: black;
+  text-shadow: 0 2px 0 rgba(122, 59, 59, 0.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  
+body {
+    background-image: var(--images);
+    color: #2F4F4F;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #F8F8FF;
+}
+
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  top: 0;
+  background-image: url("../images/Universe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 0;
+  text-align: center;
+}
+
+
+  header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+header nav ul li a {
+    padding: 10px 15px 5px 10px;
+    font-weight: lighter;
+    margin: 30px;
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: black;
+  }
+
+  header nav ul li a:hover {
+    background: #F0F8FF;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+.hero {
+    background-image: url("../images/Universe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+
+.hero .hero-cta {
+    padding: 150px;
+    font-size: 28px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  align-items: center;
+  font-size: 16px;
+  padding: 30px;
+}
+
+.grid-item.about {
+  grid-row: 1 / span 3;
+  grid-column: 1 /span 2;
+  font-size: 28px;
+  text-align: center;
+}
+
+.grid-item.text {
+  grid-row: 1 / span 3;
+  grid-column: 3 /span 6;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.grid-item.work {
+  grid-row: 4 / span 14;
+  grid-column: 1 /span 2;
+  font-size: 28px;
+}
+
+.grid-item.fintank {
+  grid-row: 4 / span 10;
+  grid-column: 3 / span 4;
+  background-image: url('../images/Fintank.PNG');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.grid-item.fintank p {
+  color: rgba(0, 0, 0, 0);
+  font-size: 32px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  background: rgb(240,248,255,0); 
+}
+
+.grid-item.fintank p:hover {
+  color: rgb(0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  background: rgb(240,248,255,0.5); 
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.grid-item.fintank:hover {
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.grid-item.fintank a {
+  text-decoration: none;
+}
+
+
+.grid-item.ashley {
+  grid-row: 4 / span 5;
+  grid-column: 7 / span 2;
+  background-image: url('../images/Ashley.PNG');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.grid-item.ashley p {
+  color: rgba(0, 0, 0, 0);
+  font-size: 32px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  background: rgb(240,248,255,0); 
+}
+
+.grid-item.ashley p:hover {
+  color: rgb(0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  background: rgb(240,248,255,0.5); 
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.grid-item.ashley:hover {
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.grid-item.ashley a {
+  text-decoration: none;
+}
+
+
+
+.grid-item.run {
+  grid-row: 9 / span 5;
+  grid-column: 7 / span 2;
+  background-image: url('../images/Runbuddy.PNG');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+
+.grid-item.run p {
+  color: rgba(0, 0, 0, 0);
+  font-size: 32px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  background: rgb(240,248,255,0); 
+}
+
+.grid-item.run p:hover {
+  color: rgb(0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  background: rgb(240,248,255,0.5); 
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.grid-item.run:hover {
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.grid-item.run a {
+  text-decoration: none;
+}
+
+
+.grid-item.python {
+  grid-row: 14 / span 4;
+  grid-column: 3 / span 8;
+  background-image: url('../images/python3.PNG');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.grid-item.python p {
+  color: rgba(0, 0, 0, 0);
+  font-size: 32px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  background: rgb(240,248,255,0); 
+}
+
+.grid-item.python p:hover {
+  color: rgb(0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  background: rgb(240,248,255,0.5); 
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.grid-item.python:hover {
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.grid-item.python a {
+  text-decoration: none;
+}
+
+
+.grid-item.contact {
+  grid-row: 18 / span 3;
+  grid-column: 1 /span 2;
+  font-size: 28px;
+}
+
+.grid-item.info {
+  grid-row: 18 / span 3;
+  grid-column: 3 / span 6 ;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item.info p{
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+
